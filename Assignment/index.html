@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Cart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/styles.css">
+    <script src="assets/scripts.js" async></script>
+    <script src="https://kit.fontawesome.com/df1129c5a7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <h1>All the Nice Things</h1>
+        <div id="cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="hoverText">$0</span>
+            <p id="cartItems">&nbsp;</p>
+            <button id="checkout" onclick="checkout()">Checkout Now</button>
+        </div>
+    </header>
+    <main>
+        <h2>Try Our Cookies</h2>
+        <div class="container">
+            <!-- Product Tiles -->
+            <section class="tile">
+                <img src="https://th.bing.com/th/id/OIP.BLyMA9vM_NMYogghiBQqhwHaLH?rs=1&pid=ImgDetMain" alt="Peanut Butter Cookie" >
+                <h3>Peanut Butter</h3>
+                <p>Peanut butter cookies are rich and gooey.</p>
+                <p>$20</p>
+                <button onclick="addToCart('peanut butter')">Add to Cart</button>
+            </section>
+            <section class="tile">
+                <img src="https://th.bing.com/th/id/OIP.FQQcXgUz8p8qY_YgyYb-vgHaLH?rs=1&pid=ImgDetMain" alt="Sandies Cookie">
+                <h3>Sandies</h3>
+                <p>Sandies are sweet and light.</p>
+                <p>$30</p>
+                <button onclick="addToCart('sandies')">Add to Cart</button>
+            </section>
+            <section class="tile">
+                <img src="https://www.ifyougiveablondeakitchen.com/wp-content/uploads/2017/01/butter-spritz-cookies-cookie-press-christmas-07.2017.jpg" alt="Party Press Cookie">
+                <h3>Party Press</h3>
+                <p>Party Press cookies are decorative and tasty.</p>
+                <p>$35</p>
+                <button onclick="addToCart('party press')">Add to Cart</button>
+            </section>
+            <section class="tile">
+                <img src="https://i1.wp.com/www.littlesweetbaker.com/wp-content/uploads/2014/05/best-chocolate-chip-cookies-3.jpg?ssl=1" alt="Chocolate Chip Cookie">
+                <h3>Chocolate Chip</h3>
+                <p>Chocolate chip cookies with walnuts are soft and chocolatey.</p>
+                <p>$25</p>
+                <button onclick="addToCart('chocolate chip')">Add to Cart</button>
+            </section>
+        </div>
+    </main>
+    
+    <!-- Dark Mode Toggle Button -->
+    <button id="darkModeToggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+</body>
+
+</html>
